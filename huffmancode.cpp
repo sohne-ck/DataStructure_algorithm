@@ -14,12 +14,12 @@ struct MinHeapStruct{
 };
 
 MinHeap Create(int Maxsize){
-    MinHeap H = malloc(sizeof(struct MinHeapStruct));
-    H->Elements = malloc((Maxsize+1) * sizeof(ElementType));
-    H->Size = 0;
-    H->Capacity = Maxsize;
-    H->Elements[0] = MaxData;
-    return H;
+    MinHeap m = malloc(sizeof(struct MinHeapStruct));
+    m->Elements = malloc((Maxsize+1) * sizeof(ElementType));
+    m->Size = 0;
+    m->Capacity = Maxsize;
+    m->Elements[0] = MaxData;
+    return m;
 }
 
 int WPL( HuffmanTree T, int Depth )
